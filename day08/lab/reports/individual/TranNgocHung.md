@@ -1,6 +1,6 @@
 # Báo Cáo Cá Nhân — Lab Day 08: RAG Pipeline
 
-**Họ và tên:** Trần Ngọc Hùng   
+**Họ và tên:** Trần Ngọc Hùng -- 2A202600429
 **Vai trò trong nhóm:** Retrieval Owner
 **Ngày nộp:** 2026-04-13  
 
