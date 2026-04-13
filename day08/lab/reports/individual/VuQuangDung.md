@@ -1,6 +1,7 @@
 # Báo Cáo Cá Nhân — Lab Day 08: RAG Pipeline
 
 **Họ và tên:** Vũ Quang Dũng
+**Mã học viên:** 2A202600442
 **Vai trò trong nhóm:**  Retrieval Owner 
 **Ngày nộp:** 13/04/2026 
 **Độ dài yêu cầu:** 500–800 từ
