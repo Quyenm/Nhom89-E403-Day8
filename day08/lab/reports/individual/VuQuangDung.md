@@ -1,6 +1,7 @@
 # Báo Cáo Cá Nhân — Lab Day 08: RAG Pipeline
 
 **Họ và tên:** Vũ Quang Dũng
+**Mã học viên:** 2A202600442
 **Vai trò trong nhóm:**  Retrieval Owner 
 **Ngày nộp:** 13/04/2026 
 **Độ dài yêu cầu:** 500–800 từ
@@ -14,7 +15,7 @@
 > - Cụ thể bạn implement hoặc quyết định điều gì?
 > - Công việc của bạn kết nối với phần của người khác như thế nào?
 
-Tôi chịu trách nhiệm phần Retrieval (Retrieval Owner) và thực hiện các cải tiến chính trong `rag_answer.py` cho Sprint 2/3. Cụ thể, tôi implement HyDE (sinh "hypothetical answer" rồi embed để tăng khả năng khớp ngữ nghĩa), Multi-Query Fusion (sinh các paraphrase của truy vấn và fuse kết quả bằng RRF) và Smart Abstain Detection (dùng threshold để ngừng sớm khi similarity quá thấp). Tôi tích hợp các hàm này với pipeline hybrid (dense + BM25 + RRF), viết hàm xây dựng context `build_context_block()` và tham gia tinh chỉnh các tham số `TOP_K`/`RRF_K`/`ABSTAIN_THRESHOLD`. Công việc của tôi kết nối chặt với phần indexing (index.py) — tôi dùng metadata/aliases do nhóm indexing chuẩn hoá để lọc và trích dẫn nguồn.
+Tôi chịu trách nhiệm phần Retrieval (Retrieval Owner) và thực hiện các cải tiến chính trong `rag_answer.py` cho Sprint 3. Cụ thể, tôi implement HyDE (sinh "hypothetical answer" rồi embed để tăng khả năng khớp ngữ nghĩa), Multi-Query Fusion (sinh các paraphrase của truy vấn và fuse kết quả bằng RRF) và Smart Abstain Detection (dùng threshold để ngừng sớm khi similarity quá thấp). Tôi tích hợp các hàm này với pipeline hybrid (dense + BM25 + RRF), viết hàm xây dựng context `build_context_block()` và tham gia tinh chỉnh các tham số `TOP_K`/`RRF_K`/`ABSTAIN_THRESHOLD`. Công việc của tôi kết nối chặt với phần indexing (index.py) — tôi dùng metadata/aliases do nhóm indexing chuẩn hoá để lọc và trích dẫn nguồn.
 
 ---
 
