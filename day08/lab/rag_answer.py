@@ -479,7 +479,6 @@ if __name__ == "__main__":
             print("Chưa implement — hoàn thành TODO trong retrieve_dense() và call_llm() trước.")
         except Exception as e:
             print(f"Lỗi: {e}")
-
     # Uncomment sau khi Sprint 3 hoàn thành:
     # print("\n--- Sprint 3: So sánh strategies ---")
     # compare_retrieval_strategies("Approval Matrix để cấp quyền là tài liệu nào?")
