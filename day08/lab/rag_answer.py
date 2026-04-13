@@ -211,7 +211,7 @@ def retrieve_hybrid(
 
 
 # =============================================================================
-# CẢI TIẾN 1: HyDE — Hypothetical Document Embeddings
+# CẢI TIẾN 1: HyDE — Hypothetical Document Embeddings - NGUYEN TIEN DAT 2A202600217
 # =============================================================================
 
 def retrieve_hyde(
@@ -291,7 +291,7 @@ def retrieve_hyde(
 
 
 # =============================================================================
-# CẢI TIẾN 2: MULTI-QUERY FUSION (RAG-Fusion)
+# CẢI TIẾN 2: MULTI-QUERY FUSION (RAG-Fusion)  - NGUYEN TIEN DAT 2A202600217
 # =============================================================================
 
 def retrieve_multi_query(
@@ -352,7 +352,7 @@ def retrieve_multi_query(
 
 
 # =============================================================================
-# CẢI TIẾN 3: SMART ABSTAIN DETECTION
+# CẢI TIẾN 3: SMART ABSTAIN DETECTION  - NGUYEN TIEN DAT 2A202600217
 # =============================================================================
 
 def should_abstain(candidates: List[Dict[str, Any]], threshold: float = ABSTAIN_THRESHOLD) -> bool:
@@ -367,7 +367,7 @@ def should_abstain(candidates: List[Dict[str, Any]], threshold: float = ABSTAIN_
 
 
 # =============================================================================
-# RERANK — Cross-Encoder
+# RERANK — Cross-Encoder  - NGUYEN TIEN DAT 2A202600217
 # =============================================================================
 
 def rerank(query: str, candidates: List[Dict[str, Any]], top_k: int = TOP_K_SELECT) -> List[Dict[str, Any]]:
@@ -387,7 +387,7 @@ def rerank(query: str, candidates: List[Dict[str, Any]], top_k: int = TOP_K_SELE
 
 
 # =============================================================================
-# AUGMENTATION — DOCUMENT REORDERING
+# AUGMENTATION — DOCUMENT REORDERING  - NGUYEN TIEN DAT 2A202600217
 # =============================================================================
 
 def reorder_for_lost_in_middle(chunks: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
@@ -559,7 +559,7 @@ def rag_answer(
 
 
 # =============================================================================
-# SPRINT 3: SO SÁNH BASELINE VS VARIANT
+# SPRINT 3: SO SÁNH BASELINE VS VARIANT  - NGUYEN TIEN DAT 2A202600217
 # =============================================================================
 
 def compare_retrieval_strategies(query: str) -> None:
