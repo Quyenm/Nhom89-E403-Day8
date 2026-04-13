@@ -43,8 +43,7 @@ VARIANT_CONFIG = {
     "label": "variant_hybrid",
 }
 
-# Variant mới: HyDE (Hypothetical Document Embeddings)
-# Thay đổi duy nhất: retrieval_mode = "hyde" — A/B Rule tuân thủ
+
 VARIANT_HYDE_CONFIG = {
     "retrieval_mode": "hyde",
     "top_k_search": 10,
@@ -52,8 +51,6 @@ VARIANT_HYDE_CONFIG = {
     "use_rerank": False,
     "label": "variant_hyde",
 }
-
-
 # =============================================================================
 # SCORING FUNCTIONS
 # 4 metrics: Faithfulness, Answer Relevance, Context Recall, Completeness
@@ -106,7 +103,6 @@ Trả về JSON (chỉ JSON, không giải thích):
     except Exception as e:
         pass
 
-    # Fallback: chấm thủ công
     return {"score": None, "notes": "LLM-as-Judge thất bại — cần chấm thủ công"}
 
 
@@ -359,7 +355,6 @@ def run_scorecard(
 
         results.append(row)
 
-    # Tổng kết
     metrics = ["faithfulness", "relevance", "context_recall", "completeness"]
     print(f"\n--- Tổng kết {label} ---")
     for metric in metrics:
@@ -526,7 +521,11 @@ if __name__ == "__main__":
         output_csv="ab_comparison.csv",
     )
 
-    print("\n✓ Sprint 4 hoàn thành!")
-    print("Tiếp theo:")
-    print("  1. Điền kết quả vào docs/tuning-log.md")
-    print("  2. Viết báo cáo cá nhân trong reports/individual/")
+    print("\nSprint 4 hoàn thành!")
+    print("\n\nViệc cần làm Sprint 4:")
+    print("  1. Hoàn thành Sprint 2 + 3 trước")
+    print("  2. Chấm điểm thủ công hoặc implement LLM-as-Judge trong score_* functions")
+    print("  3. Chạy run_scorecard(BASELINE_CONFIG)")
+    print("  4. Chạy run_scorecard(VARIANT_CONFIG)")
+    print("  5. Gọi compare_ab() để thấy delta")
+    print("  6. Cập nhật docs/tuning-log.md với kết quả và nhận xét")
